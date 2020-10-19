@@ -68,9 +68,10 @@ def main():
     run.log("Max iterations:", np.int(args.max_iter))
 
     model = LogisticRegression(C=args.C, max_iter=args.max_iter,dual= False).fit(x_train, y_train)
+    joblib.dump(model,'model.joblib')
 
     accuracy = model.score(x_test, y_test)
-    run.log("Accuracy", np.float(accuracy))
+    run.log("accuracy", np.float(accuracy))
 
 if __name__ == '__main__':
 
