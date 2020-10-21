@@ -33,7 +33,7 @@ The AutoML also automatically generated the following hyperparameter to aquire t
 **Compare the two models and their performance. What are the differences in accuracy? In architecture? If there was a difference, why do you think there was one?**\
 **Difference in accuracy**
  - HyperDrive Run : 91.03%
- - AutoML : 91.54%
+ - AutoML : 91.54%\
 There is a slight improvement in accuracy while running the same problem in AutoML than that of running in HyperDrive.\
 **Difference in architecture**\
 As mentioned above, two models solve the same problem with two different algorithm and so the different parameters and overall architecture.\
@@ -44,7 +44,7 @@ There was differences because we execute the HyperDrive run with user defined al
 There are following areas of improvement for future experiments
  - we can try different learning algorithm
  - we can give wide range of value to choose as arguments of the parameters of RandomParameterSampling
- - we can try different optimization technique.
+ - we can try different optimization technique.\
 These improvements might help the model to achieve better accuracy in less execution time.
 ## Proof of cluster clean up
 **If you did not delete your compute cluster in the code, please complete this section. Otherwise, delete this section.**
